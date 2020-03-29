@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-6">
+            {{ form.subject|as_crispy_field }}
+            {{ form.message|as_crispy_field }}
+            {{ form.send_to|as_crispy_field }}
+            {{ form.interval|as_crispy_field }}
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Отправить</button>
+</form>
+{% endblock %}

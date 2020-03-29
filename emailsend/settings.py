@@ -17,14 +17,14 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
-# EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
-# EMAIL_HOST = os.getenv("EMAIL_HOST")
-# EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
-# EMAIL_PORT = os.getenv("EMAIL_HOST_PORT")
-EMAIL_HOST = 'smtp.mail.ru'
-EMAIL_HOST_USER = 'test_pws4@mail.ru'
-EMAIL_HOST_PASSWORD = 'RUA3o1U*sspg'
-EMAIL_PORT = 587
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+EMAIL_HOST = os.getenv("EMAIL_HOST")
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_PORT = os.getenv("EMAIL_HOST_PORT")
+# EMAIL_HOST = 'smtp.mail.ru'
+# EMAIL_HOST_USER = 'test_pws4@mail.ru'
+# EMAIL_HOST_PASSWORD = '1RUA3o1U*sspg2'
+# EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'sender.urls'
+ROOT_URLCONF = 'emailsend.urls'
 
 TEMPLATES = [
     {

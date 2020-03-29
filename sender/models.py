@@ -5,8 +5,7 @@ import time, threading
 
 
 class Email(models.Model):
-    date = models.DateTimeField('Дата создания', auto_now=True, editable=True)
-    date_send = models.DateTimeField('Дата отправки', null=True, editable=True)
+    date = models.DateTimeField('Дата создания', auto_now_add=True, editable=True)
     interval = models.PositiveIntegerField('Количество секунд')
     subject = models.CharField('Тема письма', max_length=150)
     message = models.CharField('Сообщение', max_length=500)
